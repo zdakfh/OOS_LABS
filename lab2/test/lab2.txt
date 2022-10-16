@@ -1,0 +1,9 @@
+.:
+dir
+file
+file1
+file2
+lab2.txt
+
+./dir:
+new_file

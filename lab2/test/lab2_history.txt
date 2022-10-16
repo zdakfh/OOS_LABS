@@ -1,0 +1,76 @@
+    1  ls
+    2  history 
+    3  ls
+    4  mkdir test
+    5  cd test/
+    6  touch file 
+    7  chmod a+r file 
+    8  ls -l
+    9  chmod -rw file
+   10  ls -l
+   11  cat file 
+   12  echo >> "some" file
+   13  echo "some" >>file
+   14  cat file 
+   15  chmod u+w file
+   16  ll
+   17  rm some
+   18  ll
+   19  echo "test" >>file
+   20  cat file 
+   21  chmod u+rrr file
+   22  ll
+   23  chmod g+r file
+   24  ll
+   25  chmod u-rrr file
+   26  ll
+   27  cat file
+   28  chmod u+r file
+   29  cat file
+   30  mkdir dir
+   31  touch dir/new_file
+   32  echo "file 2" >> dir/new_file 
+   33  ls dir
+   34  cat dir/new_file 
+   35  cd dir
+   36  chmod gou-x
+   37  chmod g-x
+   38  chmod g-x new_file 
+   39  chmod ou-x new_file 
+   40  rm new_file 
+   41  ls
+   42  touch new_file
+   43  echo "file 2" new_file 
+   44  echo "file 2">> new_file 
+   45  ls
+   46  cat new_file 
+   47  cd ../
+   48  chmod uog-x dir/
+   49  rm dir/new_file 
+   50  chown root dir/new_file 
+   51  chgrp root dir/new_file 
+   52  umask 600
+   53  touch file1
+   54  ls
+   55  ll
+   56  rm fil
+   57  rm file1
+   58  umask u=6, g=0, o=0
+   59  umask -S
+   60  umask 600
+   61  umask -S
+   62  umask u=rwx,g=,o=
+   63  umask -S
+   64  touch file1
+   65  ll
+   66  umask u=rwx,g=rwx,o=rwx
+   67  umask -S
+   68  touch file2
+   69  ll
+   70  cat file
+   71  ls
+   72  ls -1R lab2.txt 
+   73  ls -1R > lab2.txt 
+   74  cat lab2.txt 
+   75  history 
+   76  history > lab2_history.txt 

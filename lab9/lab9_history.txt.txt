@@ -1,0 +1,34 @@
+  890  mkdir lab9
+  891  cd lab9
+  892  ldd /bin/login | grep pam
+  893  ls -l /lib64/libpam*
+  894  ls -l /lib64/security/
+  895  vim /etc/pam.d/system-auth
+  896  vim /etc/pam.d/su
+  897  su -c "hostname mephi"
+  898  vim /etc/pam.d/su
+  899  su
+  900  vim /etc/pam.d/su
+  901  useradd -G wheel -p password -s /bin/bash user1
+  902  sudo useradd -G wheel -p password -s /bin/bash user1
+  903  su user1
+  904  sudo passwd user1
+  905  su user1
+  906  vim /etc/pam.d/su
+  907  vim /etc/pam.d/login
+  908  cp /etc/pam.d/login ./logcopy
+  909  su root
+  910  su user1
+  911  cp ./logcopy /etc/pam.d/login 
+  912  sudo cp ./logcopy /etc/pam.d/login 
+  913  man pam_pwquality
+  914  vim /etc/security/pwquality.conf
+  915  vim /etc/pam.d/system-auth
+  916  sudo passwd akula2003 
+  917  vim /etc/pam.d/system-auth
+  918  vim /etc/security/pwquality.conf
+  919  man pam_limits
+  920  vim /etc/security/limits.conf
+  921  su user1
+  922  vim /etc/security/limits.conf
+  923  history > ./lab9_history.txt

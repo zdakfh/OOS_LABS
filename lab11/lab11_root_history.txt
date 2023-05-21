@@ -1,0 +1,13 @@
+    1  ls
+    2  auditctl -D
+    3  auditctl -w /home/akula2003/file1 -p war -k user1_file1
+    4  auditctl -l
+    5  aureport --file -ts today -i --summary
+    6  aureport --file -ts recent 
+    7  ausearch -a 170
+    8  aureport
+    9  aureport --auth -ts recent
+   10  aureport --user -ts recent -i
+   11  ausearch --uid 1001 -ts recent
+   12  ausearch --uid 1000 -ts recent
+   13  history > lab11_root_history

@@ -1,0 +1,18 @@
+  160  id
+  161  pwd
+  162  touch file1
+  163  echo 'Hello, world!' > file1 
+  164  cat file1 
+  165  chmod 600 file1 
+  166  id
+  167  history > lab11_user_history
+  168  cat lab11_user_history 
+  169  tail -8 > lab11_user_history
+  170  tail -8 lab11_user_history > lab11_userHistory
+  171  cat lab11_userHistory 
+  172  history
+  173  history tail -14 > lab11_user_history
+  174   tail -15 history> lab11_user_history
+  175   tail 16 history> lab11_user_history
+  176  vim lab11_user_history 
+  177  history > lab11_user_history
